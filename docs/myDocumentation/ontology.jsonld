@@ -1,0 +1,798 @@
+[ {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Airbus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A category of aircraft manufactured by the Airbus company."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "aircraft"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Aircraft"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Boing"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Aircraft",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A vehicle designed for air travel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://dbpedia.org/page/Aircraft"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Airport",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A complex of runways and buildings for the takeoff, landing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://dbpedia.org/page/Airport"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Bad",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Refers to the quality or standard of service provided during a flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Service"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Boing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A category of aircraft manufactured by the Boeing company."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Aircraft"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/BusinessClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A travel class with enhanced comfort and service compared to economy class."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/TravelClass"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/BusinessPassenger",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A passenger traveling for business or professional reasons"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Passenger"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/LeisurePassenger"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/City",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Represents an urban area"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Location"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Country"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Country",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Represents a nation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Location"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/EconomyClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A travel class designed for more affordable air travel with standard amenities."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/TravelClass"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/FirstClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The highest travel class offering premium services, amenities, and space."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/TravelClass"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Flight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A scheduled journey made by an aircraft from one airport to another"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Good",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Refers to the quality or standard of service provided during a flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Service"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/LeisurePassenger",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A passenger traveling for pleasure or vacation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Passenger"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A general category for geographical places"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Negative",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A review that expresses dissatisfaction with a service or product."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Review"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Positive"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Passenger",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An individual who travels in an aircraft.\""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://dbpedia.org/page/Passenger"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Positive",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A review that expresses a favorable opinion of a service or product"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Review"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Review",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An assessment or critique of a service, product,"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://dbpedia.org/page/Review"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Service",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An act of assistance or benefit to a customer.\""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://dbpedia.org/page/Service"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/TravelClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A category of seating accommodation on an aircraft that indicates different levels of comfort, service"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/UnverifiedReview",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A review whose authenticity has not been confirmed."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Review"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/VerifiedReview"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/VerifiedReview",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A review with confirmed authenticity, often by a purchasing proof."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Review"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/aircraft1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/model" : [ {
+    "@value" : "Boeing 737 900"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/operates" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/flight1"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/aircraft2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/model" : [ {
+    "@value" : "Boeing 347"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/operates" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/flight2"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/arrivalFrom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Flight"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/body",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "refers to the main content or the full text of the review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/cabinStaffService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Numeric rating given for the quality of service provided by the cabin crew."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Service"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/classIncludes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/TravelClass"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Passenger"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/country",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "refers to the passenger's country of origin or nationality."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Passenger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "refers to the date of the flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/dateReview",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "refers to the date when the review was written or published"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/departureFor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Airport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Flight"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/fliesFrom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates the airport from which a particular flight departs"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Airport"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/fliesToDestination",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates the arrival location of a flight."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Location"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/flight1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2024-04-18T12:00:00"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/hasPassenger" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/passeger1"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/id" : [ {
+    "@value" : "A2321123213"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/operatedBy" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/aircraft1"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/flight2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2023-04-18T12:00:00"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/hasPassenger" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/passeger2"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/id" : [ {
+    "@value" : "A123124234"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/operatedBy" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/aircraft2"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/foodAndBeverages",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Refers to the provision of meals, snacks, and drinks as part of a service"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Service"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/groundService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Numeric rating given for the quality of services received at the airport before and after the flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Service"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/hasPassenger",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Connects a flight to the passengers traveling on it"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Passenger"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/hasService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates the availability or inclusion of specific services during a flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Service"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/id",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Refers to the unique identifier or code assigned to a flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/includes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/City"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/locatedIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Specifies the country in which a city is located"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Country"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/model",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Refers to the specific model or type of aircraft scheduled for a flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Aircraft"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Refers to the name or identity of a passenger."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Passenger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/nameLocation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Refers to the name or identity of a person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/operatedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Links a flight to the specific aircraft that operates it"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Aircraft"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/operates",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates the availability or inclusion of specific services during a flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Aircraft"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Flight"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/originFor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Flight"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/originatedFrom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates the departure location of a flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Location"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/passeger1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/country" : [ {
+    "@value" : "United Kingdom"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/name" : [ {
+    "@value" : "Mary Le"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/writesReview" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/review1"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/BusinessPassenger"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/passeger2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/country" : [ {
+    "@value" : "Australia"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/name" : [ {
+    "@value" : "Wayne Burgess"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/writesReview" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/review2"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/LeisurePassenger"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/passengerOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Passenger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Flight"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/rating",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "refers to the score or evaluation given to a service"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/review1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/body" : [ {
+    "@value" : "he delay of my flight from Haneda to Doha caused a bit of chaos upon arrival. Despite my efforts to reach the gate promptly, I was denied boarding due to luggage issues, and the lack of assistance added to the frustration"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2023-12-25T00:00:00"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/hasService" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/service1"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/rating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "1.0"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/reviewedBy" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/passeger1"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/title" : [ {
+    "@value" : "marred by inconveniences"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/review2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/body" : [ {
+    "@value" : "hey convinced me that I needed to pay $1500 to add my middle name to my flight, or they wouldn't allow me on the plane"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/dateReview" : [ {
+    "@value" : "2023-12-15T00:00:00"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/hasService" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/service2"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/rating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "2.0"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/reviewedBy" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/passeger2"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/title" : [ {
+    "@value" : "seat wouldn't stay up"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/reviewedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Associates a review with the passenger who wrote it"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Passenger"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/seatComfort",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Numeric rating given for the comfort of the seating in the aircraft"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Service"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/service1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/cabinStaffService" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "2.0"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/foodAndBeverages" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "3.0"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/groundService" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/seatComfort" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "4"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/valueForMoney" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "2.0"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/wifiAndConnectivity" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/service2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/cabinStaffService" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/foodAndBeverages" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "4"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/groundService" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "3"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/seatComfort" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/valueForMoney" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/wifiAndConnectivity" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/serviceOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Service"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Review"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "refers to the headline or the main heading that summarizes  the review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/travelsInClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Specifies the travel class in which a passenger is booked or traveling"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Passenger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/TravelClass"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/valueForMoney",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Numeric rating given for the overall value for money of the flight experience."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Service"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/wifiAndConnectivity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "umeric rating given for the availability and quality of WiFi and connectivity services on the flight."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Service"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/writesReview",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates that a passenger has authored or provided a review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Passenger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2024/3/untitled-ontology-5/Review"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]
